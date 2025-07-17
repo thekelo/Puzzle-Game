@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  background: #001f3f;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  gap: 4px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tile:hover {
+  transform: scale(1.1);
+}
+
+.hud {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+  font-size: 18px;
+}
